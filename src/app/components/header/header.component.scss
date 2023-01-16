@@ -17,7 +17,11 @@ header {
       margin-right: 80px;
     }
 
-    .page:active {
+    .page:hover {
+      color: forestgreen;
+    }
+
+    .active {
       @include text-bold;
       color: $solid-black;
       border-bottom: 4px solid $solid-black;
