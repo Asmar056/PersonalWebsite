@@ -1,6 +1,5 @@
 @import "palette.scss";
 @import "typography.scss";
-
 * {
     font-family: "WorkSans";
   }
@@ -8,6 +7,7 @@
   html,
   body {
     height: 100%;
+    // width: 100%;
   }
   
   body {

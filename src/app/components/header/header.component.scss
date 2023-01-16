@@ -1,5 +1,40 @@
-@import '../../../styles.scss' header {
+@import '../../../styles.scss';
+header {
+  display: flex;
+  padding: 25px 160px;
+
   .title {
     @include title;
+  }
+
+  .pages {
+    margin: 0 175.5px 0 269px;
+    display: flex;
+    @include text-bold-light;
+    color: $dark-grey;
+
+    .page {
+      margin-right: 80px;
+    }
+
+    .page:active {
+      @include text-bold;
+      color: $solid-black;
+      border-bottom: 4px solid $solid-black;
+    }
+  }
+
+  .icons {
+    display: flex;
+    .email {
+      margin: 1.5px 43.2px 0 0;
+      img {
+        width: 24px;
+      }
+    }
+
+    .twitter > img {
+      width: 32px;
+    }
   }
 }
