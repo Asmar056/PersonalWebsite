@@ -10,17 +10,21 @@ const routes: Routes = [
     path: '',
     component: MainComponent,
     children: [
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
       {
-        path: '',
+        path: 'home',
         component: HomeComponent,
       },
-    ],
-  },
-  {
+      {
         path: 'work',
         component: WorkComponent,
       },
-  
+    ],
+  },
+  // {
+  //   path: 'work',
+  //   component: WorkComponent,
+  // },
 ];
 
 @NgModule({
